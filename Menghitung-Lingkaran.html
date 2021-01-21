@@ -1,0 +1,84 @@
+<!-- <html> 
+
+<head> 
+<title>Menghitung Luas Lingkaran</title> 
+</head>
+
+<body>
+
+<h2><u>Menghitung Luas Lingkaran</u></h2>
+
+<form name='hitungluas0' method='post'>
+  <table>
+
+    <tr>
+      <td><b>Jarijari</b></td>
+      <td>:</td>
+      <td><input type='number' name='jari2' placeholder="Masukkan Jari-jari" onchange='hitungluas();'></td>
+    </tr>
+    
+    <tr>
+      <td><b>Luas</b></td>
+      <td>:</td>
+      <td> <input type='text' name='luas0' placeholder="Hasil" onchange='hitungluas();'></td>
+    </tr>
+
+  </table>
+
+  <input type="reset" value="Reset">
+
+</form>
+</body>
+
+<script type='text/javascript'>
+  function hitungluas(){
+  var jarijari = document.forms['hitungluas0']['jari2'].value;
+  alas = parseInt(jarijari);
+  var luas = (jarijari*jarijari)*3.14;
+  document.forms['hitungluas0']['jarijari'].value = luas;
+}
+</script>
+
+</html>  -->
+
+<html>
+
+  <head>
+  <body>
+  <title>Luas Lingkaran</title>
+  <form name ="llg" class="style3">
+  <h2><u>Menghitung Luas Lingkaran</u></h2>
+
+  <table>
+    <tr>
+      <td>Masukkan Jari-jari</td>
+      <td>:</td>
+      <td><input type="text" class="style3" placeholder="Masukkan Angka" name="ijari"></td>
+    </tr>
+
+    <tr>
+      <td>Hasil</td>
+      <td>:</td>
+      <td><input name="oluas" class="style3" type="text" placeholder="Hasil"></td>
+    </tr>
+
+  </table>
+
+    <input name="button" type="button" onClick="luasling()" value="Hitung">
+    <input name="reset" type="reset" value="Reset">
+  
+  </form>
+  </body>
+
+  <script type='text/javascript'>
+  
+    function luasling(){
+    var jari = parseFloat(document.llg.ijari.value);
+    var luas = 3.14*jari*jari;
+    
+    document.llg.ijari.value = jari;
+    document.llg.oluas.value = luas;
+    }
+    </script>
+
+  </html>

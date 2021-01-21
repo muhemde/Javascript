@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Menghitung Luas Segitiga</title>
+</head>
+
+<body>
+
+<h2><u>Menghitung Luas Segitiga</u></h2>
+
+<form name='hitungls3' method='post'>
+
+<table>
+
+<tr>
+  <td><b>Alas</b></td>
+  <td>:</td>
+  <td><input type='text' name='alass3' placeholder="Masukkan Angka" onchange='hitungluas();'></td>
+</tr>
+
+<tr>
+  <td><b>Tinggi</b></td>
+  <td>:</td>
+  <td><input type='text' name='tinggis3' placeholder="Masukkan Angka" onchange='hitungluas();'></td>
+</tr>
+
+<tr>
+  <td><b>Luas</b></td>
+  <td>:</td>
+  <td> <input type='text' name='luass3' placeholder="Hasil" onchange='hitungluas();'></td>
+</tr>
+
+</table>
+
+<input name="button" type="button" onClick="hitungluas()" value="Hitung">
+<input type="reset" value="Reset">
+
+</form>
+</body>
+
+<script type='text/javascript'>
+    function hitungluas(){
+    var alas = document.forms['hitungls3']['alass3'].value;
+    alas = parseInt(alas);
+    var tinggi = document.forms['hitungls3']['tinggis3'].value;
+    tinggi = parseInt(tinggi);
+    var luas = (alas*tinggi)/2;
+    document.forms['hitungls3']['luass3'].value = luas;
+}
+</script>
+</html>
